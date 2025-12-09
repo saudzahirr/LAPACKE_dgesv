@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+
+rm -rf build/
+cmake -S . -B build \
+  -DLAPACKE=ON
+cmake --build build
+./build/solve
